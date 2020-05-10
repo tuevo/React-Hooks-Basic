@@ -177,7 +177,7 @@ PostFilterForm:
 - IS NOT a kind of React Hooks
 - The same as Pure Component (used in Class Component)
 
-     Pure Component: 
+    + Pure Component: 
         + Is re-rendered ONLY when its Props change
         + handle life cycle ComponentShouldUpdate
 
