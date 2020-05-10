@@ -38,8 +38,8 @@
     + Working with DOM
     + Asynchronous actions: fetching data, working with DOM, subscriptions, setTimeout, setInterval...
     + 2 TYPES:
-        . Needn't to be cleaned up: calling API, working with DOM
-        . Need to be cleaned up: subscriptions, setTimeout, setInterval
+        + Needn't to be cleaned up: calling API, working with DOM
+        + Need to be cleaned up: subscriptions, setTimeout, setInterval
 
 - Allows Functional Component todeeppink handle React Component Side-effect
 - Will be called after the first rendering and RECALLED IF ITS DEPENDENCIES CHANGE
