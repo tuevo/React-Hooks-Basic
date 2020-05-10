@@ -6,7 +6,7 @@
 3. Who loves using Hooks? (WHO)
 4. Why should you use Hooks? (WHY)
 
-## ANSWERING:
+## ANSWERS:
 
 ### 1. WHAT ARE REACT HOOKS?
 - A new available feature since React 16.8
@@ -38,14 +38,14 @@
 - Allows Functional Component todeeppink handle React Component Side-effect
 - Will be called after the first rendering and RECALLED IF ITS DEPENDENCIES CHANGE
 
-    useEffect(() => {
-        // do your side-effect here ...
+        useEffect(() => {
+            // do your side-effect here ...
 
-        return () => {
-            // clean up here ...
-            // executed before the next render or unmount
-        }
-    }, [])
+            return () => {
+                // clean up here ...
+                // executed before the next render or unmount
+            }
+        }, [])
 
     MOUNTING
     - rendering -> run useEffect()
