@@ -62,26 +62,24 @@
         + Empty dependencies []: useEffect() runs after the THE FIRST RENDERING ONLY                => ONCE
         + Not Empty dependencies [filters]: useEffect() runs after every the changing of `filters`  => DEPENDENCIES CHANGE
 
-    // NO DEPENDENCIES
-    useEffect(() => {
-        // ComponentDidMount or ComponentDidUpdate
-    })
+    NO DEPENDENCIES
+        useEffect(() => {
+            // ComponentDidMount or ComponentDidUpdate
+        })
 
-    // EMPTY ARRAY and NEEDN'T CLEANING UP (ComponentDidMount)
-    useEffect(() => {
-        // ComponentDidMount
-    }, []);
+    EMPTY ARRAY and NEEDN'T CLEANING UP (ComponentDidMount)
+        useEffect(() => {
+            // ComponentDidMount
+        }, []);
 
-    // EMPTY ARRAY and NEED CLEANING UP (ComponentDidMount + ComponentWillUnmount)
-    useEffect(() => {
-        // ComponentDidMount
+    EMPTY ARRAY and NEED CLEANING UP (ComponentDidMount + ComponentWillUnmount)
+        useEffect(() => {
+            // ComponentDidMount
 
-        return () => {
-            // ComponentWillUnmount
-        }
-    }, []);
-
-    // WITH DEPENDENCIES
+            return () => {
+                // ComponentWillUnmount
+            }
+        }, []);
     
 #### Custom Hooks
 - Separate the complex logical code from UI
@@ -107,8 +105,8 @@
 ### 1. Component Tree
 
 App
-|__ TodoForm
-|__ TodoList
++ Todo List
++ Toto Form
 
 
 ### 2. Component Analysis
@@ -145,24 +143,24 @@ PostFilterForm:
 
     -- Example --
 
-    function add(a, b) {
-        // Init the cache
-        if(!add.cache) {
-            add.cache = {}
+        function add(a, b) {
+            // Init the cache
+            if(!add.cache) {
+                add.cache = {}
+            }
+
+            // Return the cached result if found
+            const key = `${a}_{b}`;                 // the key as a list of params
+            const symmetricKey = `${b}_${a}`;       // the symmetricKey as a reversed list of params 
+            if(add.cache[key]) return add.cache[key];
+            if(add.cache[symmetricKey]) return add.cache[symmetricKey];
+
+            // Calculate and cache the result
+            const sum = a + b;
+            add.cache[key] = sum;
+            add.cache[symmetricKey] = sum;
+            return sum;
         }
-
-        // Return the cached result if found
-        const key = `${a}_{b}`;                 // the key as a list of params
-        const symmetricKey = `${b}_${a}`;       // the symmetricKey as a reversed list of params 
-        if(add.cache[key]) return add.cache[key];
-        if(add.cache[symmetricKey]) return add.cache[symmetricKey];
-
-        // Calculate and cache the result
-        const sum = a + b;
-        add.cache[key] = sum;
-        add.cache[symmetricKey] = sum;
-        return sum;
-    }
 
 #### React.memo()
 - IS NOT a kind of React Hooks
