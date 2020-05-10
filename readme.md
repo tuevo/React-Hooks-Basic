@@ -1,5 +1,11 @@
 # :rocket: REACT HOOKS EXAMPLES FOR EVERYONE !!!
 
+## INSTALLATION
+1. Install all dependent packages
+        npm install
+2. Start app
+        npm start
+
 ## QUESTIONS:
 1. What are React Hooks? (WHAT)
 2. How to use? (HOW)
@@ -63,23 +69,23 @@
         + Not Empty dependencies [filters]: useEffect() runs after every the changing of `filters`  => DEPENDENCIES CHANGE
 
     NO DEPENDENCIES
-        useEffect(() => {
-            // ComponentDidMount or ComponentDidUpdate
-        })
+            useEffect(() => {
+                // ComponentDidMount or ComponentDidUpdate
+            })
 
     EMPTY ARRAY and NEEDN'T CLEANING UP (ComponentDidMount)
-        useEffect(() => {
-            // ComponentDidMount
-        }, []);
+            useEffect(() => {
+                // ComponentDidMount
+            }, []);
 
     EMPTY ARRAY and NEED CLEANING UP (ComponentDidMount + ComponentWillUnmount)
-        useEffect(() => {
-            // ComponentDidMount
+            useEffect(() => {
+                // ComponentDidMount
 
-            return () => {
-                // ComponentWillUnmount
-            }
-        }, []);
+                return () => {
+                    // ComponentWillUnmount
+                }
+            }, []);
     
 #### Custom Hooks
 - Separate the complex logical code from UI
