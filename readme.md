@@ -140,8 +140,7 @@ PostFilterForm:
 #### Memoization in Javascript:
 - A processing time optimization technique for an expensive function executed in many times
 - Caching the result of a calculation and return the cached result if the calculation is executed again
-
-    -- Example --
+- For example:
 
         function add(a, b) {
             // Init the cache
