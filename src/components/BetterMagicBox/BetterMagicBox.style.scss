@@ -1,0 +1,14 @@
+.better-magic-box {
+  $box-size: 160px;
+  width: $box-size;
+  height: $box-size;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  transition: background-color 0.35s ease-in-out;
+  animation-iteration-count: infinite;
+}

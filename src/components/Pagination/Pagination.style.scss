@@ -1,0 +1,14 @@
+.pagination {
+  button {
+    background: white;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    color: deeppink;
+    cursor: pointer;
+
+    &:disabled {
+      color: silver;
+      background: #f8f8f8;
+    }
+  }
+}

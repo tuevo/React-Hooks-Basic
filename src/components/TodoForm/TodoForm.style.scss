@@ -1,0 +1,27 @@
+.todo-form {
+  padding-bottom: 10px;
+
+  input,
+  button {
+    padding: 10px;
+    border: 1px solid #eee;
+  }
+
+  input {
+    width: 228px;
+    padding-left: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  button {
+    background: #f5f5f5;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    cursor: pointer;
+    &:hover {
+      background: #eee;
+    }
+  }
+}

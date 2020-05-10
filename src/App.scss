@@ -1,0 +1,57 @@
+.app {
+  padding: 50px;
+  min-height: 78.5vh;
+  width: 50%;
+
+  display: table;
+  margin: 50px auto;
+
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+  h1 {
+    color: rgba($color: #000000, $alpha: 1);
+  }
+  h2 {
+    padding-top: 25px;
+    color: rgba($color: #000000, $alpha: 1);
+  }
+  h3 {
+    color: rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .app__title {
+    display: flex;
+    img {
+      width: 100px;
+    }
+  }
+
+  .app__examples {
+    display: flex;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+
+    .app__examples__item {
+      position: relative;
+      color: rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+
+  .app__btn-show-clock,
+  .app__btn-count {
+    border: 1px solid #eee;
+    background: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+      background: #f8f8f8;
+    }
+  }
+}

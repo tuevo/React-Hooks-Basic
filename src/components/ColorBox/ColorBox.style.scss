@@ -1,0 +1,23 @@
+.color-box {
+  $box-size: 160px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  width: $box-size;
+  height: $box-size;
+  border-radius: 5px;
+
+  color: #fff;
+
+  // transition: all 0.35s ease-in-out 0s;
+  transition: width 0.35s ease-in-out, height 0.35s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    width: 250px;
+    height: 250px;
+  }
+}
