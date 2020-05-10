@@ -1,22 +1,22 @@
-REACT HOOKS
+# REACT HOOKS EXAMPLES FOR EVERYONE !!!
 
-::QUESTIONS:
+## QUESTIONS:
 1. What are React Hooks? (WHAT)
 2. How to use? (HOW)
 3. Who loves using Hooks? (WHO)
 4. Why should you use Hooks? (WHY)
 
-::ANSWERING:
+## ANSWERING:
 
-1. WHAT ARE REACT HOOKS?
+### 1. WHAT ARE REACT HOOKS?
 - A new available feature since React 16.8
 - Build-in functions handle React State, Props, Life Cycle, Context
 - Allow Function Component to use State, Props, Life Cycle same as Class Component and so on
 - Make the Function Component more powerful
 
-2. HOW TO USE?
+### 2. HOW TO USE?
 
-:: useState(state): [state, setState]
+#### useState(state): [state, setState]
 - Allows Functional Component to use React State
 - Input: initialState
 - Output: [state, setState]
@@ -26,7 +26,7 @@ REACT HOOKS
     // processing ONLY at the first rendering
   })
 
-:: useEffect(callback, dependencies)
+#### useEffect(callback, dependencies)
 
 - (*) Side-effect: all effects on component after it being mounted, such as:
     + Working with DOM
@@ -83,14 +83,14 @@ REACT HOOKS
 
     // WITH DEPENDENCIES
     
-:: Custom Hooks
+#### Custom Hooks
 - Separate the complex logical code from UI
 - Reuse the logical code
 
-3. WHO LOVES USING HOOKS?
+### 3. WHO LOVES USING HOOKS?
 - Functional Programmer
 
-4. WHY SHOULD YOU USE HOOKS?
+### 4. WHY SHOULD YOU USE HOOKS?
 - No breaking changes
 - It is possible to re-implement Class Component to Functional Component
 - Avoiding OOP Programming (this, super(props))
@@ -102,16 +102,16 @@ REACT HOOKS
 - You needn't to re-implement all your available code with Hooks
 
 
-:: COMPONENT ANALYSIS
+## COMPONENT ANALYSIS
 
-1. Component Tree
+### 1. Component Tree
 
 App
 |__ TodoForm
 |__ TodoList
 
 
-2. Component Analysis
+### 2. Component Analysis
 
 TodoList
   - Props:
@@ -137,9 +137,9 @@ PostFilterForm:
     - Render: form > input[type=text]
     - Using Debounce technique
 
-::::::::::::::::::::: HIGHER ORDER COMPONENT (HOC) ::::::::::::::::
+## HIGHER ORDER COMPONENT (HOC)
 
-:: Memoization in Javascript:
+#### Memoization in Javascript:
 - A processing time optimization technique for an expensive function executed in many times
 - Caching the result of a calculation and return the cached result if the calculation is executed again
 
@@ -164,7 +164,7 @@ PostFilterForm:
         return sum;
     }
 
-:: React.memo()
+#### React.memo()
 - IS NOT a kind of React Hooks
 - The same as Pure Component (used in Class Component)
 
